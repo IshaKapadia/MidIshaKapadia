@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timetable4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:fontFamily="sans-serif-black"
+        android:text="MScIT Time Table"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="401dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Button
+            android:id="@+id/btnMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mondayTt"
+            android:text="Monday" />
+
+        <Button
+            android:id="@+id/btnTues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tuesdayTt"
+            android:text="Tuesday" />
+
+        <Button
+            android:id="@+id/btnWed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="wednesdayTt"
+            android:text="Wednesday" />
+
+        <Button
+            android:id="@+id/btnThurs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="thursdayTt"
+            android:text="Thursday" />
+
+        <Button
+            android:id="@+id/btnFri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fridayTt"
+            android:text="Friday" />
+
+        <Button
+            android:id="@+id/btnSatur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="saturdayTt"
+            android:text="Saturday" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
